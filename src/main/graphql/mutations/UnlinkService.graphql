@@ -1,0 +1,17 @@
+mutation UnlinkServiceMutation($accountNum:String!, $comment:String!) {
+    unlinkService(accountNum: $accountNum,comment: $comment){
+        currentServices {
+            name
+            accountNum
+            dateAdded
+        }
+        unlinkedDatetime{
+            year
+            month
+            date
+            hour
+            min
+            Sec
+        }
+    }
+}

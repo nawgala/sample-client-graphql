@@ -1,0 +1,23 @@
+query SearchUsersByCategories($email:String,$firstName:String,$limit:Int!,$msisdn:String,$nic:String,$offset:Int!,$username:String){
+    searchUsersByCategories(email:$email,firstName:$firstName,limit:$limit,msisdn:$msisdn,nic:$nic,offset:$offset,username:$username){
+        accountDetail{
+            personaInfo{
+                accountNum
+                answer
+                birthday
+                email
+                firstName
+                lastName
+                mobileNumber
+                nic
+                securityQuestion
+                username
+            }
+            services{
+                accountNum
+                name
+            }
+        }
+        totalItems
+    }
+}

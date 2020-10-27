@@ -1,0 +1,3 @@
+query IsUserExist($username:String!){
+    isUserExist(username:$username)
+}

@@ -1,0 +1,25 @@
+query GetUserServicesHistoryByUsernameQuery($username:String!){
+    getUserServicesHistoryByUsername(username:$username){
+        servicesHistory{
+            account_number
+            comment date id
+            service_action
+            service_id
+            service_status
+            service_type
+            user_id
+        }
+        user{
+            accountNum
+            answer
+            birthday
+            email
+            firstName
+            lastName
+            mobileNumber
+            nic
+            securityQuestion
+            username
+        }
+    }
+}

@@ -1,0 +1,23 @@
+query FindAllQuery($limit:Int!,$offset:Int!){
+    findAll(limit:$limit,offset:$offset){
+        accountDetail{
+            personaInfo{
+                accountNum
+                answer
+                birthday
+                email
+                firstName
+                lastName
+                mobileNumber
+                nic
+                securityQuestion
+                username
+            }
+            services{
+                accountNum
+                name
+            }
+        }
+        totalItems
+    }
+}

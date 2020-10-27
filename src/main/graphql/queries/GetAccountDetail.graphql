@@ -1,0 +1,18 @@
+query GetAccountDetailQuery($userTicket:String!){
+    getAccountDetail(userTicket:$userTicket){
+        personaInfo{
+            accountNum
+            birthday
+            email
+            firstName
+            lastName
+            mobileNumber
+            nic
+            username
+        }
+        services{
+            accountNum
+            name
+        }
+    }
+}

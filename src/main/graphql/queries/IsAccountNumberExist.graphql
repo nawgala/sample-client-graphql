@@ -1,0 +1,3 @@
+query IsAccountNumberExist($accountNumber:String){
+    isAccountNumberExist(accountNumber:$accountNumber)
+}

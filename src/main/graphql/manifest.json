@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "operations": [
+    {
+      "signature": "c6b3da5fbf75347e87c81483683b668cf92792e4cbf5afa12b5282f65c7a8afe",
+      "document": "mutation GetApiAccessToken($clientId:String!,$secret:String!){getApiAccessToken(clientId:$clientId,secret:$secret){__typename access_token expires_in refresh_token scope token_type}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "6b9d3cf2759c843f734653df31219db954ab919619b60bd4a802295e366839c7",
+      "document": "mutation UnlinkServiceMutation($accountNum:String!,$comment:String!){unlinkService(accountNum:$accountNum,comment:$comment){__typename currentServices{__typename accountNum dateAdded name}unlinkedDatetime{Sec __typename date hour min month year}}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "58d43ea694ba92e02f91d78b5701aa6455832046f9f1292353bb7130a94e9150",
+      "document": "query FindAllQuery($limit:Int!,$offset:Int!){findAll(limit:$limit,offset:$offset){__typename accountDetail{__typename personaInfo{__typename accountNum answer birthday email firstName lastName mobileNumber nic securityQuestion username}services{__typename accountNum name}}totalItems}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "b35566c572264f9b96e3e4053c331fd7fe6ca2fb888fcae05d7e80e638d0b19e",
+      "document": "query GetAccountDetailQuery($userTicket:String!){getAccountDetail(userTicket:$userTicket){__typename personaInfo{__typename accountNum birthday email firstName lastName mobileNumber nic username}services{__typename accountNum name}}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "6554db9c9e21fa350a199f9130c6fa70e690d5f03ccb3912edf01bad571d3eef",
+      "document": "query GetUserServicesByUsername($username:String!){getUserServicesByUsername(username:$username){__typename services{__typename accountNum name}user{__typename accountNum answer birthday email firstName lastName mobileNumber nic securityQuestion username}}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "ad4c8cd757bf710d2d032d4744aaef5ee29370d7a7bb5d56664102b972cb55cc",
+      "document": "query GetUserServicesHistoryByUsernameQuery($username:String!){getUserServicesHistoryByUsername(username:$username){__typename servicesHistory{__typename account_number comment date id service_action service_id service_status service_type user_id}user{__typename accountNum answer birthday email firstName lastName mobileNumber nic securityQuestion username}}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "30c3e779d580840f8f12910f5db8ffc5e770a3abc9936ccdf6919ff3b7ef1247",
+      "document": "query IsAccountNumberExist($accountNumber:String){isAccountNumberExist(accountNumber:$accountNumber)}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "8f186b6be79e58f9d81a4c6746ae128bc9c05efff294e1a54b87e484a7716117",
+      "document": "query IsUserExist($username:String!){isUserExist(username:$username)}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    },
+    {
+      "signature": "118d684b74386113f794e82925c23c0d2310a455c1c5ca0684ff57082b91a3db",
+      "document": "query SearchUsersByCategories($email:String,$firstName:String,$limit:Int!,$msisdn:String,$nic:String,$offset:Int!,$username:String){searchUsersByCategories(email:$email,firstName:$firstName,limit:$limit,msisdn:$msisdn,nic:$nic,offset:$offset,username:$username){__typename accountDetail{__typename personaInfo{__typename accountNum answer birthday email firstName lastName mobileNumber nic securityQuestion username}services{__typename accountNum name}}totalItems}}",
+      "metadata": {
+        "engineSignature": ""
+      }
+    }
+  ]
+}
